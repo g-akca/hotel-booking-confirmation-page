@@ -1,7 +1,20 @@
 function HeaderSection() {
   return (
-    <>
-    </>
+    <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-1">
+        <p className="uppercase text-[12px] leading-base font-mono tracking-[2px] text-neutral-600">Booking · Confirmed</p>
+
+        <h1 className="text-neutral-900 text-[40px] leading-[120%] font-fraunces tracking-[-0.5px]">
+          Bienvenue, <span className="text-terracotta-600 italic">Lucia.</span>
+        </h1>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 leading-[120%] font-semibold tracking-[0.3px]">
+        <button type="button" className="px-4 py-2.5 rounded-full border border-neutral-400 text-neutral-900">Print receipt</button>
+        
+        <button type="button" className="px-4 py-2.5 rounded-full bg-neutral-900 text-sun-50">Add to calendar</button>
+      </div>
+    </div>
   )
 }
 
