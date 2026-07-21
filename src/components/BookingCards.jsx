@@ -3,7 +3,7 @@ import ReceiptCard from "./ReceiptCard";
 
 function BookingCards() {
   return (
-    <div>
+    <div className="grid grid-rows-2">
       <WelcomeCard />
 
       <ReceiptCard />
