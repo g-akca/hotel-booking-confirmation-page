@@ -5,7 +5,7 @@ function WelcomeCard() {
     <div 
       className="
         bg-[radial-gradient(circle_at_100%_0%,var(--color-terracotta-400)_0%,var(--color-terracotta-500)_40%,var(--color-terracotta-700)_80%)] 
-        p-6 rounded-[20px] text-sun-50 flex flex-col gap-5 justify-between
+        relative z-10 p-6 rounded-[20px] text-sun-50 flex flex-col gap-5 justify-between
         shadow-[0_10px_40px_rgba(194,90,46,0.35),0_50px_80px_rgba(169,66,31,0.25)]
       "
     >
