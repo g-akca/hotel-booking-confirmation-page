@@ -52,9 +52,27 @@ function ReceiptCard() {
           </div>
         </div>
 
-        <div></div>
+        <div className="pt-3 border-t border-neutral-400 border-dashed flex flex-col gap-2">
+          <div className="flex justify-between items-center gap-2">
+            <p>Room · La Garrigue × 4 nights</p>
+            <p className="font-mono text-[12px] leading-base">€ 620.00</p>
+          </div>
 
-        <div></div>
+          <div className="flex justify-between items-center gap-2">
+            <p>Breakfast × 2 guests</p>
+            <p className="font-mono text-[12px] leading-base">€ 96.00</p>
+          </div>
+
+          <div className="flex justify-between items-center gap-2 text-neutral-700">
+            <p>Tourist tax</p>
+            <p className="font-mono text-[12px] leading-base">€ 14.40</p>
+          </div>
+        </div>
+
+        <div className="pt-3 border-t border-neutral-600 flex justify-between items-center">
+          <p className="text-neutral-600 font-mono text-[12px] leading-base tracking-[2px] uppercase">Total paid</p>
+          <p className="text-[24px] leading-base font-fraunces tracking-[-0.2px]">€ 730.40</p>
+        </div>
       </div>
 
       <div className="flex justify-between items-center gap-2">
