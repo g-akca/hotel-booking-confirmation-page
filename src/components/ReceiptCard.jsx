@@ -18,12 +18,39 @@ function ReceiptCard() {
 
           <div className="flex flex-col items-end gap-0.5 text-neutral-600 text-[10px] leading-base tracking-[1px] font-mono">
             <p>№ MS-2026</p>
-
             <p>0421-AH</p>
           </div>
         </div>
 
-        <div></div>
+        <div className="flex justify-between items-center gap-3 text-center">
+          <div className="flex flex-col gap-2">
+            <p className="text-[10px] leading-base tracking-[1px] text-neutral-600 font-mono uppercase">Check in</p>
+
+            <div className="flex flex-col gap-1.5">
+              <p className="text-[32px] leading-[120%] font-fraunces tracking-[-0.25px]">25 Apr</p>
+
+              <div className="flex gap-1 text-[12px] leading-[120%] tracking-[0.4px] text-neutral-700">
+                <p>Saturday</p>
+                <p>·</p>
+                <p>15:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <p className="text-[10px] leading-base tracking-[1px] text-neutral-600 font-mono uppercase">Check out</p>
+
+            <div className="flex flex-col gap-1.5">
+              <p className="text-[32px] leading-[120%] font-fraunces tracking-[-0.25px]">29 Apr</p>
+
+              <div className="flex gap-1 text-[12px] leading-[120%] tracking-[0.4px] text-neutral-700">
+                <p>Wednesday</p>
+                <p>·</p>
+                <p>11:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div></div>
 
