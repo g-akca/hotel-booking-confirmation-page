@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="text-base leading-base text-neutral-700 min-h-screen bg-neutral-100 flex flex-col gap-5">
-      <AppBar />
+      <AppBar openMenu={() => setIsMenuOpen(true)} />
 
       <MainSection />
 
