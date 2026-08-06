@@ -27,15 +27,16 @@ const navList = [
   },
 ];
 
-function Menu() {
+function Menu({ closeMenu }) {
   return (
-    <div className="fixed z-20 left-0 right-13.75 inset-y-0 bg-neutral-100 border border-neutral-400 p-4 flex flex-col justify-between gap-4">
+    <div className="fixed z-20 left-0 right-13.75 inset-y-0 bg-neutral-100 p-4 flex flex-col justify-between gap-4">
       <div className="flex flex-col gap-4">
         <div className="pb-4.25 flex justify-between items-center border-b border-neutral-400">
           <img src={logoImg} alt="Logo image" />
 
           <button 
             type="button" 
+            onClick={closeMenu} 
             className="w-8 aspect-square rounded-sm border border-neutral-400 flex justify-center items-center"
           >
             <img src={closeIcon} alt="" />

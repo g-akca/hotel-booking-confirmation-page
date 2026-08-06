@@ -20,7 +20,7 @@ function App() {
             className="fixed z-10 inset-0 bg-neutral-900/80" 
           />
           
-          <Menu />
+          <Menu closeMenu={() => setIsMenuOpen(false)} />
         </>
       )}
     </div>
