@@ -1,5 +1,6 @@
 import logoImg from "/images/logo.svg";
 import closeIcon from "/images/icon-close.svg";
+import weatherIcon from "/images/icon-weather.svg";
 
 const baseUrl = import.meta.env.BASE_URL;
 
@@ -69,12 +70,28 @@ function Menu({ closeMenu }) {
       </div>
 
       <div className="flex flex-col gap-5">
-        <div className="rounded-2xl bg-sun-300 px-4 py-3 flex flex-col gap-1.5 shadow-[0_1px_rgba(0,0,0,0.04),0_10px_24px_-16px_rgba(194,90,46,0.4)]">
+        <div 
+          className="
+            relative overflow-hidden rounded-2xl bg-sun-300 px-4 py-3 flex flex-col gap-1.5 
+            shadow-[0_1px_rgba(0,0,0,0.04),0_10px_24px_-16px_rgba(194,90,46,0.4)]
+          "
+        >
+          <img src={weatherIcon} alt="" className="absolute -top-7 -right-2.5" />
 
+          <p className="uppercase text-[10px] leading-base font-mono tracking-[1px]">Today in Cassis</p>
+          <p className="text-neutral-900 font-fraunces text-[32px] leading-[120%] tracking-[-0.25px]">27°</p>
+          <p className="text-[12px] leading-[120%] tracking-[0.4px]">Sunny · light breeze</p>
         </div>
 
-        <div className="pt-4 flex flex-col gap-2.5">
-
+        <div 
+          className="
+            pt-4 flex flex-col gap-2.5 border-t border-dashed border-neutral-400 
+            text-neutral-600 text-[10px] leading-base uppercase font-mono tracking-[1px]
+          "
+        >
+          <p>Est. 1987</p>
+          <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+          <p>© 2026 Maison Soleil</p>
         </div>
       </div>
     </div>
