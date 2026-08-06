@@ -43,7 +43,27 @@ function Menu() {
         </div>
 
         <div className="flex flex-col gap-0.5">
+          {navList.map(item => (
+            <div 
+              key={item.label} 
+              className={`px-3 py-2.5 flex items-center gap-2 rounded-lg leading-[120%] font-medium ${item.isSelected && "bg-white text-neutral-900"}`}
+            >
+              <img src={item.icon} alt="" />
 
+              <p className="grow">{item.label}</p>
+
+              {item.isSelected && (
+                <div 
+                  className="
+                    w-4 aspect-square rounded-full bg-terracotta-600 flex justify-center 
+                    items-center text-neutral-100 text-[10px] leading-base font-fraunces
+                  "
+                >
+                  1
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
 
