@@ -7,7 +7,7 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="text-base leading-base text-neutral-700 min-h-screen bg-neutral-100 flex flex-col gap-5">
+    <div className="text-base leading-base text-neutral-700 min-h-screen bg-neutral-100 flex flex-col gap-5 tablet:gap-6">
       <AppBar openMenu={() => setIsMenuOpen(true)} />
 
       <MainSection />
