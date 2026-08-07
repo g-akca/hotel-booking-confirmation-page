@@ -6,6 +6,7 @@ function BreakfastCard() {
       className="
         px-4 py-5 rounded-2xl bg-neutral-50 border border-neutral-400 flex flex-col gap-5
         shadow-[0_1px_rgba(0,0,0,0.02),0_1px_1px_rgba(62,44,30,0.04),0_18px_40px_-28px_rgba(62,44,30,0.25)]
+        tablet:px-5 tablet:py-6 tablet:gap-6
       "
     >
       <div className="flex gap-2.5 items-center">
