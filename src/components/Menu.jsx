@@ -30,9 +30,9 @@ const navList = [
 
 function Menu({ closeMenu }) {
   return (
-    <div className="fixed z-20 left-0 right-13.75 inset-y-0 max-w-[384px] bg-neutral-100 p-4 flex flex-col justify-between gap-4">
+    <div className="fixed z-20 left-0 right-13.75 inset-y-0 max-w-[384px] bg-neutral-100 p-4 flex flex-col justify-between gap-4 tablet:px-6">
       <div className="flex flex-col gap-4">
-        <div className="pb-4.25 flex justify-between items-center border-b border-neutral-400">
+        <div className="pb-4 flex justify-between items-center border-b border-neutral-400">
           <img src={logoImg} alt="Logo image" />
 
           <button 
