@@ -4,7 +4,7 @@ import InfoCards from "./InfoCards";
 
 function MainSection() {
   return (
-    <main className="px-4 pb-10 flex flex-col gap-12">
+    <main className="px-4 pb-10 flex flex-col gap-12 tablet:px-6 tablet:gap-10">
       <HeaderSection />
 
       <BookingCards />

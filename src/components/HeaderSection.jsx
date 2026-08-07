@@ -1,6 +1,6 @@
 function HeaderSection() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 tablet:flex-row tablet:justify-between tablet:items-center">
       <div className="flex flex-col gap-1">
         <p className="uppercase text-[12px] leading-base font-mono tracking-[2px] text-neutral-600">Booking · Confirmed</p>
 
