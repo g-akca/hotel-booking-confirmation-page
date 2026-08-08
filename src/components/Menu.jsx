@@ -30,7 +30,9 @@ const navList = [
 
 function Menu({ closeMenu, isMenuOpen }) {
   return (
-    <div 
+    <aside 
+      aria-hidden={!isMenuOpen}
+      inert={!isMenuOpen ? "" : undefined}
       className={`
         fixed z-30 left-0 right-13.75 inset-y-0 max-w-[384px] bg-neutral-100 p-4 flex flex-col justify-between gap-4
         ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-200 tablet:px-6 
@@ -51,15 +53,15 @@ function Menu({ closeMenu, isMenuOpen }) {
           </button>
         </div>
 
-        <div className="flex flex-col gap-0.5">
+        <nav className="flex flex-col gap-0.5">
           {navList.map(item => (
             <button 
               key={item.label}
               type="button" 
               className={`
                 px-3 py-2.5 flex items-center gap-2 rounded-lg leading-[120%] font-medium cursor-pointer transition-all 
-                text-start hover:shadow-[0_1px_rgba(62,44,30,0.03)] hover:bg-white desktop:focus:outline-none
-                desktop:focus:bg-white desktop:focus:shadow-[0_0_0_3px_var(--color-neutral-100),0_0_0_5px_var(--color-terracotta-600)]
+                text-start hover:shadow-[0_1px_rgba(62,44,30,0.03)] hover:bg-white focus:outline-none
+                focus:bg-white focus:shadow-[0_0_0_3px_var(--color-neutral-100),0_0_0_5px_var(--color-terracotta-600)]
                 ${item.isSelected && "bg-white text-neutral-900 shadow-[0_1px_rgba(62,44,30,0.03)]"}
               `}
             >
@@ -79,7 +81,7 @@ function Menu({ closeMenu, isMenuOpen }) {
               )}
             </button>
           ))}
-        </div>
+        </nav>
       </div>
 
       <div className="flex flex-col gap-5">
@@ -107,7 +109,7 @@ function Menu({ closeMenu, isMenuOpen }) {
           <p>© 2026 Maison Soleil</p>
         </div>
       </div>
-    </div>
+    </aside>
   )
 }
 

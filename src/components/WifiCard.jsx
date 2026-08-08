@@ -60,8 +60,8 @@ function WifiCard() {
                 onClick={handleCopy}
                 className="
                   px-2 pt-1 pb-0.5 rounded-full border border-neutral-400 uppercase text-[10px] leading-base 
-                  font-mono tracking-[1px] cursor-pointer transition-all hover:bg-neutral-400 desktop:focus:outline-none 
-                  desktop:focus:shadow-[0_0_0_2px_var(--color-neutral-200),0_0_0_3px_var(--color-terracotta-600)]
+                  font-mono tracking-[1px] cursor-pointer transition-all hover:bg-neutral-400 focus:outline-none 
+                  focus:shadow-[0_0_0_2px_var(--color-neutral-200),0_0_0_3px_var(--color-terracotta-600)]
                 "
               >
                 {copied ? "Copied" : "Copy"}
