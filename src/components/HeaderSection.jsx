@@ -10,9 +10,25 @@ function HeaderSection() {
       </div>
 
       <div className="grid grid-cols-2 gap-4 leading-[120%] font-semibold tracking-[0.3px] tablet:flex">
-        <button type="button" className="px-4 py-2.5 rounded-full border border-neutral-400 text-neutral-900">Print receipt</button>
+        <button 
+          type="button" 
+          className="
+            px-4 py-2.5 rounded-full border border-neutral-400 text-neutral-900 cursor-pointer transition-all hover:bg-neutral-200 
+            desktop:focus:outline-none desktop:focus:shadow-[0_0_0_3px_var(--color-neutral-100),0_0_0_5px_var(--color-terracotta-600)]
+          "
+        >
+          Print receipt
+        </button>
         
-        <button type="button" className="px-4 py-2.5 rounded-full bg-neutral-900 text-sun-50">Add to calendar</button>
+        <button 
+          type="button" 
+          className="
+            px-4 py-2.5 rounded-full bg-neutral-900 text-sun-50 cursor-pointer transition-all hover:bg-neutral-800
+            desktop:focus:outline-none desktop:focus:shadow-[0_0_0_3px_var(--color-neutral-100),0_0_0_5px_var(--color-terracotta-600)]
+          "
+        >
+          Add to calendar
+        </button>
       </div>
     </div>
   )
