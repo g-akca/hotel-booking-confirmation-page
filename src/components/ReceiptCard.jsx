@@ -23,7 +23,7 @@ function ReceiptCard() {
           </div>
         </div>
 
-        <div className="flex justify-between items-center gap-3 text-center">
+        <div className="flex justify-between items-center gap-3 text-center tablet:justify-center tablet:gap-20">
           <div className="flex flex-col gap-2">
             <p className="text-[10px] leading-base tracking-[1px] text-neutral-600 font-mono uppercase">Check in</p>
 

@@ -4,7 +4,7 @@ import BreakfastCard from "./BreakfastCard";
 
 function InfoCards() {
   return (
-    <div className="flex flex-col gap-4.5 tablet:grid tablet:grid-cols-[repeat(auto-fit,minmax(350px,1fr))]">
+    <div className="flex flex-col gap-4.5 tablet:grid tablet:grid-cols-[repeat(auto-fit,minmax(350px,1fr))] desktop:gap-6">
       <ArrivalCard />
       <WifiCard />
       <BreakfastCard />
