@@ -9,12 +9,12 @@ function BookingCards() {
       <div className="relative grid grid-rows-2 justify-items-center gap-1.5 tablet:gap-0 tablet:grid-rows-none tablet:grid-cols-2">
         <WelcomeCard />
 
-        <img src={sunIllustration} alt="Sun illustration" className="absolute top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all" />
+        <img src={sunIllustration} alt="Sun illustration" className="absolute top-1/2 -translate-y-1/2 opacity-0 desktop:group-hover:opacity-100 transition-all" />
 
         <ReceiptCard />
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="hidden desktop:flex items-center gap-2">
         <img src={sparkleIcon} alt="" />
         <p className="text-neutral-600 text-[10px] leading-base font-mono tracking-[1px] uppercase">Hover to fan</p>
         <img src={sparkleIcon} alt="" />
