@@ -33,8 +33,9 @@ function Menu({ closeMenu, isMenuOpen }) {
     <div 
       className={`
         fixed z-30 left-0 right-13.75 inset-y-0 max-w-[384px] bg-neutral-100 p-4 flex flex-col justify-between gap-4
-        ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-200 
-        tablet:px-6 desktop:translate-x-0 desktop:transition-none desktop:sticky desktop:h-screen
+        ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-200 tablet:px-6 
+        desktop:translate-x-0 desktop:transition-none desktop:sticky desktop:h-screen desktop:border-r 
+        desktop:border-neutral-400 desktop:px-4 desktop:py-5
       `}
     >
       <div className="flex flex-col gap-4">
@@ -44,7 +45,7 @@ function Menu({ closeMenu, isMenuOpen }) {
           <button 
             type="button" 
             onClick={closeMenu} 
-            className="w-8 aspect-square rounded-sm border border-neutral-400 flex justify-center items-center"
+            className="w-8 aspect-square rounded-sm border border-neutral-400 flex justify-center items-center desktop:hidden"
           >
             <img src={closeIcon} alt="" />
           </button>
@@ -82,7 +83,7 @@ function Menu({ closeMenu, isMenuOpen }) {
             shadow-[0_1px_rgba(0,0,0,0.04),0_10px_24px_-16px_rgba(194,90,46,0.4)]
           "
         >
-          <img src={weatherIcon} alt="" className="absolute -top-7 -right-2.5" />
+          <img src={weatherIcon} alt="" className="absolute -top-7 -right-2.5 desktop:-right-3.5" />
 
           <p className="uppercase text-[10px] leading-base font-mono tracking-[1px]">Today in Cassis</p>
           <p className="text-neutral-900 font-fraunces text-[32px] leading-[120%] tracking-[-0.25px]">27°</p>
