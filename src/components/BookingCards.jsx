@@ -1,12 +1,15 @@
 import WelcomeCard from "./WelcomeCard";
 import ReceiptCard from "./ReceiptCard";
 import sparkleIcon from "/images/icon-sparkle.svg";
+import sunIllustration from "/images/illustration-sun.svg";
 
 function BookingCards() {
   return (
-    <div className="px-2 py-1.5 tablet:px-6 tablet:py-8 desktop:pt-6 desktop:pb-1 desktop:flex desktop:flex-col desktop:items-center desktop:gap-4">
-      <div className="grid grid-rows-2 justify-items-center gap-1.5 tablet:gap-0 tablet:grid-rows-none tablet:grid-cols-2">
+    <div className="group px-2 py-1.5 tablet:px-6 tablet:py-8 desktop:pt-6 desktop:pb-1 desktop:flex desktop:flex-col desktop:items-center desktop:gap-6">
+      <div className="relative grid grid-rows-2 justify-items-center gap-1.5 tablet:gap-0 tablet:grid-rows-none tablet:grid-cols-2">
         <WelcomeCard />
+
+        <img src={sunIllustration} alt="Sun illustration" className="absolute top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all" />
 
         <ReceiptCard />
       </div>

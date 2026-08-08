@@ -6,7 +6,7 @@ function ReceiptCard() {
       className="
         bg-neutral-50 p-6 rounded-[20px] text-neutral-900 flex flex-col gap-5 justify-between -rotate-2 w-full max-w-100
         shadow-[0_1px_rgba(0,0,0,0.03),0_16px_30px_-20px_rgba(62,44,30,0.35),0_20px_40px_-30px_rgba(62,44,30,0.16)] 
-        tablet:order-1 tablet:justify-self-end tablet:-rotate-4
+        tablet:order-1 tablet:justify-self-end tablet:-rotate-4 transition-all group-hover:rotate-5 group-hover:translate-x-[-22%]
       "
     >
       <div className="flex flex-col gap-5">

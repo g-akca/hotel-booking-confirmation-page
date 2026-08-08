@@ -7,6 +7,7 @@ function WelcomeCard() {
         bg-[radial-gradient(circle_at_100%_0%,var(--color-terracotta-400)_0%,var(--color-terracotta-500)_40%,var(--color-terracotta-700)_80%)] 
         relative z-10 rotate-2 p-6 rounded-[20px] text-sun-50 flex flex-col gap-5 justify-between w-full max-w-100
         shadow-[0_10px_40px_rgba(194,90,46,0.35),0_50px_80px_rgba(169,66,31,0.25)] tablet:order-2 tablet:justify-self-start tablet:rotate-4
+        transition-all group-hover:-rotate-5 group-hover:translate-x-[22%]
       "
     >
       <div className="flex flex-col gap-5">
