@@ -9,7 +9,7 @@ function BookingCards() {
       <div className="relative grid grid-rows-2 justify-items-center gap-1.5 tablet:gap-0 tablet:grid-rows-none tablet:grid-cols-2">
         <WelcomeCard />
 
-        <img src={sunIllustration} alt="Sun illustration" className="absolute top-1/2 -translate-y-1/2 opacity-0 desktop:group-hover:opacity-100 transition-all" />
+        <img src={sunIllustration} alt="Sun illustration" className="absolute -z-10 top-1/2 -translate-y-1/2 opacity-0 desktop:group-hover:opacity-100 transition-all" />
 
         <ReceiptCard />
       </div>
