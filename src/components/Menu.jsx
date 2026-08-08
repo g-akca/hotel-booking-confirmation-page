@@ -58,7 +58,7 @@ function Menu({ closeMenu, isMenuOpen }) {
               type="button" 
               className={`
                 px-3 py-2.5 flex items-center gap-2 rounded-lg leading-[120%] font-medium cursor-pointer transition-all 
-                text-start desktop:hover:shadow-[0_1px_rgba(62,44,30,0.03)] desktop:hover:bg-white desktop:focus:outline-none
+                text-start hover:shadow-[0_1px_rgba(62,44,30,0.03)] hover:bg-white desktop:focus:outline-none
                 desktop:focus:bg-white desktop:focus:shadow-[0_0_0_3px_var(--color-neutral-100),0_0_0_5px_var(--color-terracotta-600)]
                 ${item.isSelected && "bg-white text-neutral-900 shadow-[0_1px_rgba(62,44,30,0.03)]"}
               `}

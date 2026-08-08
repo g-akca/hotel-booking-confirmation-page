@@ -41,7 +41,16 @@ function WifiCard() {
             <div className="flex items-center gap-1.5">
               <p className="text-neutral-900 leading-[120%] tracking-[0.4px]">soleil-2026</p>
 
-              <p className="px-2 pt-1 pb-0.5 rounded-full border border-neutral-400 uppercase text-[10px] leading-base font-mono tracking-[1px]">Copy</p>
+              <button 
+                type="button"
+                className="
+                  px-2 pt-1 pb-0.5 rounded-full border border-neutral-400 uppercase text-[10px] leading-base 
+                  font-mono tracking-[1px] cursor-pointer transition-all hover:bg-neutral-400 desktop:focus:outline-none 
+                  desktop:focus:shadow-[0_0_0_2px_var(--color-neutral-200),0_0_0_3px_var(--color-terracotta-600)]
+                "
+              >
+                Copy
+              </button>
             </div>
           </div>
         </div>
