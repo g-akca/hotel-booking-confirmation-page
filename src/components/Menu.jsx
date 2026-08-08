@@ -28,9 +28,15 @@ const navList = [
   },
 ];
 
-function Menu({ closeMenu }) {
+function Menu({ closeMenu, isMenuOpen }) {
   return (
-    <div className="fixed z-20 left-0 right-13.75 inset-y-0 max-w-[384px] bg-neutral-100 p-4 flex flex-col justify-between gap-4 tablet:px-6">
+    <div 
+      className={`
+        fixed z-30 left-0 right-13.75 inset-y-0 max-w-[384px] bg-neutral-100 p-4 flex flex-col justify-between gap-4
+        ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-200 
+        tablet:px-6 desktop:translate-x-0 desktop:transition-none desktop:sticky desktop:h-screen
+      `}
+    >
       <div className="flex flex-col gap-4">
         <div className="pb-4 flex justify-between items-center border-b border-neutral-400">
           <img src={logoImg} alt="Logo image" />
