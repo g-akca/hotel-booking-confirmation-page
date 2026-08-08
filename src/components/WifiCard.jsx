@@ -1,6 +1,20 @@
+import { useState } from "react";
 import wifiIcon from "/images/icon-wifi.svg";
 
 function WifiCard() {
+  const [copied, setCopied] = useState(false);
+  const password = "soleil-2026";
+
+  async function handleCopy() {
+    try {
+      await navigator.clipboard.writeText(password);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch (error) {
+      console.error("Failed to copy password:", error);
+    }
+  }
+
   return (
     <div 
       className="
@@ -39,17 +53,18 @@ function WifiCard() {
             <p className="uppercase text-neutral-600 font-mono tracking-[2px] leading-base">Password</p>
 
             <div className="flex items-center gap-1.5">
-              <p className="text-neutral-900 leading-[120%] tracking-[0.4px]">soleil-2026</p>
+              <p className="text-neutral-900 leading-[120%] tracking-[0.4px]">{password}</p>
 
               <button 
                 type="button"
+                onClick={handleCopy}
                 className="
                   px-2 pt-1 pb-0.5 rounded-full border border-neutral-400 uppercase text-[10px] leading-base 
                   font-mono tracking-[1px] cursor-pointer transition-all hover:bg-neutral-400 desktop:focus:outline-none 
                   desktop:focus:shadow-[0_0_0_2px_var(--color-neutral-200),0_0_0_3px_var(--color-terracotta-600)]
                 "
               >
-                Copy
+                {copied ? "Copied" : "Copy"}
               </button>
             </div>
           </div>
