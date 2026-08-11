@@ -32,7 +32,6 @@ function Menu({ closeMenu, isMenuOpen }) {
   return (
     <aside 
       aria-hidden={!isMenuOpen}
-      inert={!isMenuOpen}
       className={`
         fixed z-30 left-0 right-13.75 inset-y-0 max-w-[384px] bg-neutral-100 p-4 flex flex-col justify-between gap-4
         ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-200 tablet:px-6 
