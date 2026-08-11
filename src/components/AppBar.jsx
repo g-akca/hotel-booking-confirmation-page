@@ -9,7 +9,7 @@ function AppBar({ openMenu }) {
       <button 
         type="button" 
         onClick={openMenu} 
-        className="w-8 aspect-square rounded-sm border border-neutral-400 flex justify-center items-center tablet:w-10"
+        className="w-8 aspect-square rounded-sm border border-neutral-400 flex justify-center items-center cursor-pointer tablet:w-10"
       >
         <img src={menuIcon} alt="" />
       </button>

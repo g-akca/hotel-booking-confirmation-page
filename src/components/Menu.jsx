@@ -47,7 +47,7 @@ function Menu({ closeMenu, isMenuOpen }) {
           <button 
             type="button" 
             onClick={closeMenu} 
-            className="w-8 aspect-square rounded-sm border border-neutral-400 flex justify-center items-center desktop:hidden"
+            className="w-8 aspect-square rounded-sm border border-neutral-400 flex justify-center items-center cursor-pointer desktop:hidden"
           >
             <img src={closeIcon} alt="" />
           </button>
