@@ -4,7 +4,7 @@ import menuIcon from "/images/icon-menu.svg";
 function AppBar({ openMenu }) {
   return (
     <div className="p-4 border-b border-neutral-400 flex justify-between items-center gap-2 tablet:px-6">
-      <img src={logoImg} alt="Logo image" />
+      <img src={logoImg} alt="Maison Soleil" />
 
       <button 
         type="button" 
