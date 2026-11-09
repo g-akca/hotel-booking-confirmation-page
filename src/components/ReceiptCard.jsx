@@ -79,7 +79,7 @@ function ReceiptCard() {
       <div className="flex justify-between items-center gap-2">
         <p className="text-[10px] leading-base tracking-[1px] text-neutral-600 font-mono uppercase">Paid · Wise · GBP</p>
 
-        <img src={barcodeIcon} alt="Barcode icon" className="h-7" />
+        <img src={barcodeIcon} alt="" className="h-7" />
       </div>
     </div>
   )
