@@ -1,3 +1,4 @@
+import { useSyncExternalStore } from "react";
 import logoImg from "/images/logo.svg";
 import closeIcon from "/images/icon-close.svg";
 import weatherIcon from "/images/icon-weather.svg";
@@ -28,10 +29,32 @@ const navList = [
   },
 ];
 
+// Must match --breakpoint-desktop in index.css
+const desktopQuery = "(min-width: 1440px)";
+
+function subscribeToDesktop(callback) {
+  const mql = window.matchMedia(desktopQuery);
+  mql.addEventListener("change", callback);
+  return () => mql.removeEventListener("change", callback);
+}
+
+function useIsDesktop() {
+  return useSyncExternalStore(
+    subscribeToDesktop,
+    () => window.matchMedia(desktopQuery).matches,
+    () => false,
+  );
+}
+
 function Menu({ closeMenu, isMenuOpen }) {
+  const isDesktop = useIsDesktop();
+  // Only hide the sidebar when it is the closed off-canvas drawer; on desktop it is always visible.
+  const isHiddenDrawer = !isDesktop && !isMenuOpen;
+
   return (
-    <aside 
-      aria-hidden={!isMenuOpen}
+    <aside
+      aria-hidden={isHiddenDrawer || undefined}
+      inert={isHiddenDrawer}
       className={`
         fixed z-30 left-0 right-13.75 inset-y-0 max-w-[384px] bg-neutral-100 p-4 flex flex-col justify-between gap-4
         ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-200 tablet:px-6 
